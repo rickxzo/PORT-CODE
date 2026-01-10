@@ -12,7 +12,7 @@ export default defineConfig({
     allowedHosts: [
       "port-code.onrender.com"
     ]
-  }
+  },
   plugins: [vue()],
   resolve: {
     alias: {
