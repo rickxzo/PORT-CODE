@@ -10,8 +10,8 @@ export default defineConfig({
     host: "0.0.0.0",
     port: process.env.PORT || 5173,
     allowedHosts: [
-      "https://rickxzo.onrender.com",
-      "https://port-code.onrender.com"
+      "rickxzo.onrender.com",
+      "port-code.onrender.com"
     ]
   },
   plugins: [vue()],
