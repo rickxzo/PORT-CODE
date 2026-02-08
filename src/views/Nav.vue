@@ -100,6 +100,60 @@
           </span>
         </span>
       </router-link>
+      <router-link to="/certifications" v-slot="{ isActive }">
+        <span class="relative inline-block group leading-none">
+          <!-- LEFT BRACKET -->
+          <span
+            class="absolute -left-4 transition-all duration-300 ease-out opacity-0 group-hover:opacity-100 group-hover:-translate-y-0"
+            :class="isActive ? 'opacity-100 text-cyan-300' : 'text-white/60'"
+          >
+            [
+          </span>
+
+          <!-- LABEL -->
+          <span
+            class="transition-opacity duration-200 leading-none"
+            :class="isActive ? 'opacity-100' : 'opacity-60'"
+          >
+            CERTS
+          </span>
+
+          <!-- RIGHT BRACKET -->
+          <span
+            class="absolute -right-4 transition-all duration-300 ease-out opacity-0 group-hover:opacity-100 group-hover:-translate-y-0"
+            :class="isActive ? 'opacity-100 text-cyan-300' : 'text-white/60'"
+          >
+            ]
+          </span>
+        </span>
+      </router-link>
+      <router-link to="/background" v-slot="{ isActive }">
+        <span class="relative inline-block group leading-none">
+          <!-- LEFT BRACKET -->
+          <span
+            class="absolute -left-4 transition-all duration-300 ease-out opacity-0 group-hover:opacity-100 group-hover:-translate-y-0"
+            :class="isActive ? 'opacity-100 text-cyan-300' : 'text-white/60'"
+          >
+            [
+          </span>
+
+          <!-- LABEL -->
+          <span
+            class="transition-opacity duration-200 leading-none"
+            :class="isActive ? 'opacity-100' : 'opacity-60'"
+          >
+            BACKGROUND
+          </span>
+
+          <!-- RIGHT BRACKET -->
+          <span
+            class="absolute -right-4 transition-all duration-300 ease-out opacity-0 group-hover:opacity-100 group-hover:-translate-y-0"
+            :class="isActive ? 'opacity-100 text-cyan-300' : 'text-white/60'"
+          >
+            ]
+          </span>
+        </span>
+      </router-link>
     </div>
   </nav>
 </template>
