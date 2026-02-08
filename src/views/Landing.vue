@@ -43,6 +43,7 @@ const projects = ref([
   { image: '/src/views/projects/aven.jpg' },
   { image: '/src/views/projects/mad2.jpg' },
   { image: '/src/views/projects/scpm.jpg' },
+  { image: '/src/views/projects/float.jpg' },
 ])
 
 const time = ref('')
