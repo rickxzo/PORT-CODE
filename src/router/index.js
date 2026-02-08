@@ -18,6 +18,16 @@ const router = createRouter({
       name: 'work',
       component: () => import('../views/Work.vue'),
     },
+    {
+      path: '/certifications',
+      name: 'certifications',
+      component: () => import('../views/Certifications.vue'),
+    },
+    {
+      path: '/background',
+      name: 'background',
+      component: () => import('../views/Background.vue'),
+    }
   ],
 })
 
