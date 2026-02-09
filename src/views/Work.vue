@@ -10,6 +10,7 @@
 
     <!-- Scrollable components layer -->
     <div class="scroll-layer" ref="scrollLayer">
+      <div class="h-96"></div>
       <div
         v-for="(item, i) in items"
         :key="i"
@@ -21,7 +22,7 @@
         </div>
         <p class="mt-3 ml-3">[ {{ i + 1 }} ] {{ item.title }} ({{ item.date }})</p>
 
-        <div class="work-spacer"></div>
+        <div class="h-96"></div>
       </div>
     </div>
   </section>
@@ -128,7 +129,7 @@ onUnmounted(() => {
 /* Work cards */
 .work-card {
   width: 30%;
-  height: 50vh;
+  /*height: 50vh;*/
 
   margin: 0 auto;
 
