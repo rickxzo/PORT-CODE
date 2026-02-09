@@ -20,8 +20,7 @@
         <div class="h-[90%] w-[100%] bg-black rounded-3xl">
           <img :src="item.image" class="w-full h-full object-cover rounded-3xl" />
         </div>
-        <p class="mt-3 ml-3">[ {{ i + 1 }} ] {{ item.title }} ({{ item.date }})</p>
-
+        <p class="mt-3 ml-3">[] {{ item.title }} ({{ item.date }})</p>
         <div class="h-96"></div>
       </div>
     </div>
@@ -30,14 +29,14 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-  
+
 const items = ref([
   { image: '/src/views/projects/aven.jpg', title: 'AVEN C.S. CHATBOT', date: '09/25' },
   { image: '/src/views/projects/float.jpg', title: 'MARINE RESEARCH CHATBOT (SIH)', date: '11/25' },
   { image: '/src/views/projects/mad2.jpg', title: 'PARKING MANAGEMENT SITE (IITM)', date: '11/25' },
   { image: '/src/views/projects/scpm.jpg', title: 'PORTFOLIO MANAGEMENT SITE', date: '01/26' },
 ])
-  
+
 //const items = ['Project One', 'Project Two', 'Project Three', 'Project Four']
 
 const xOffsets = computed(() =>
@@ -139,7 +138,7 @@ onUnmounted(() => {
 }
 
 .work-spacer {
-  height: 90vh;
+  height: 200vh;
 }
 
 /* Hide scrollbar but keep scroll */
