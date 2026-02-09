@@ -20,6 +20,8 @@
           <img :src="item.image" class="w-full h-full object-cover rounded-3xl" />
         </div>
         <p class="mt-3 ml-3">[ {{ i + 1 }} ] {{ item.title }} ({{ item.date }})</p>
+
+        <div class="work-spacer"></div>
       </div>
     </div>
   </section>
@@ -128,11 +130,15 @@ onUnmounted(() => {
   width: 30%;
   height: 50vh;
 
-  margin: 90vh auto;
+  margin: 0 auto;
 
   border-radius: 1.5rem;
 
   color: white;
+}
+
+.work-spacer {
+  height: 90vh;
 }
 
 /* Hide scrollbar but keep scroll */
