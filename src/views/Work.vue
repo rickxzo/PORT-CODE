@@ -16,10 +16,10 @@
         class="work-card"
         :style="{ transform: `translateX(${xOffsets[i]}px)` }"
       >
-        <div class="h-[90%] w-[100%] bg-black rounded-3xl">
+        <div class="h-[80%] w-[90%] bg-black rounded-3xl">
           <img :src="item.image" class="w-full h-full object-cover rounded-3xl" />
         </div>
-        <p class="mt-3 ml-3">[ 0 ] {{ item.title }} ({{ item.date }})</p>
+        <p class="mt-3 ml-3">[ {{ i + 1 }} ] {{ item.title }} ({{ item.date }})</p>
       </div>
     </div>
   </section>
@@ -29,10 +29,10 @@
 import { computed } from 'vue'
   
 const items = ref([
-  { image: '/src/views/projects/aven.jpg', title: 'Aven C.S. Chatbot', date: '09/25' },
-  { image: '/src/views/projects/float.jpg', title: 'Marine Research Chatbot (SIH)', date: '11/25' },
-  { image: '/src/views/projects/mad2.jpg', title: 'Parking Management Site (IITM)', date: '11/25' },
-  { image: '/src/views/projects/scpm.jpg', title: 'Portfolio Management Site', date: '01/26' },
+  { image: '/src/views/projects/aven.jpg', title: 'AVEN C.S. CHATBOT', date: '09/25' },
+  { image: '/src/views/projects/float.jpg', title: 'MARINE RESEARCH CHATBOT (SIH)', date: '11/25' },
+  { image: '/src/views/projects/mad2.jpg', title: 'PARKING MANAGEMENT SITE (IITM)', date: '11/25' },
+  { image: '/src/views/projects/scpm.jpg', title: 'PORTFOLIO MANAGEMENT SITE', date: '01/26' },
 ])
   
 //const items = ['Project One', 'Project Two', 'Project Three', 'Project Four']
