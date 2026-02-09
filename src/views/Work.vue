@@ -16,8 +16,10 @@
         class="work-card"
         :style="{ transform: `translateX(${xOffsets[i]}px)` }"
       >
-        <div class="h-[90%] w-[100%] bg-black rounded-3xl"></div>
-        <p class="mt-3 ml-3">[ 0 ] PROJECT NAME (MM/YY)</p>
+        <div class="h-[90%] w-[100%] bg-black rounded-3xl">
+          <img :src="item.image" class="w-full h-full object-cover rounded-3xl" />
+        </div>
+        <p class="mt-3 ml-3">[ 0 ] {{ item.title }} ({{ item.date }})</p>
       </div>
     </div>
   </section>
