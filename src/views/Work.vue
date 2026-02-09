@@ -28,9 +28,9 @@ import { computed } from 'vue
   
 const items = ref([
   { image: '/src/views/projects/aven.jpg', title: 'Aven C.S. Chatbot', date: '09/25' },
-  { image: '/src/views/projects/float.jpg', title: '', date: '11/25' },
-  { image: '/src/views/projects/mad2.jpg', title: 'Project Three', date: '11/25' },
-  { image: '/src/views/projects/scpm.jpg', title: 'Project Four', date: '01/26' },
+  { image: '/src/views/projects/float.jpg', title: 'Marine Research Chatbot (SIH)', date: '11/25' },
+  { image: '/src/views/projects/mad2.jpg', title: 'Parking Management Site (IITM)', date: '11/25' },
+  { image: '/src/views/projects/scpm.jpg', title: 'Portfolio Management Site', date: '01/26' },
 ])
   
 //const items = ['Project One', 'Project Two', 'Project Three', 'Project Four']
