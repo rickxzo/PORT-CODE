@@ -4,7 +4,7 @@
   <section class="work-section">
     <!-- Fixed center content -->
     <div class="archive-layer">
-      <h1 class="archive-title">ARCHIVE</h1>
+      <h1 class="archive-title">CERTIFICATES</h1>
       <p class="archive-sub">Scroll to discover</p>
     </div>
 
@@ -16,8 +16,10 @@
         class="work-card"
         :style="{ transform: `translateX(${xOffsets[i]}px)` }"
       >
-        <div class="h-[90%] w-[100%] bg-black rounded-3xl"></div>
-        <p class="mt-3 ml-3">[ 0 ] PROJECT NAME (MM/YY)</p>
+        <div class="h-[90%] w-[100%] bg-black rounded-3xl">
+          <img :src="item.image" class="w-full h-full object-cover rounded-3xl" />
+        </div>
+        <p class="mt-3 ml-3">[ 0 ] {{ item.title }} ({{ item.date }})</p>
       </div>
     </div>
   </section>
@@ -26,10 +28,16 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-const items = ['Project One', 'Project Two', 'Project Three', 'Project Four']
+const items = ref([
+  { image: '/src/views/projects/p1.jpg', title: 'Project One', date: '01/23' },
+  { image: '/src/views/projects/p2.jpg', title: 'Project Two', date: '02/23' },
+  { image: '/src/views/projects/p3.jpg', title: 'Project Three', date: '03/23' },
+  { image: '/src/views/projects/p4.jpg', title: 'Project Four', date: '04/23' },
+  { image: '/src/views/projects/p5.jpg', title: 'Project Five', date: '05/23' },
+])
 
 const xOffsets = computed(() =>
-  items.map((_, i) => {
+  items.value.map((_, i) => {
     const base = 370 // distance from center
     const jitter = Math.random() * 100 - 50 // subtle randomness
     return (i % 2 === 0 ? -base : base) + jitter
