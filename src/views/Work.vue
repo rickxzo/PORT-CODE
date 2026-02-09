@@ -24,12 +24,19 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
-
-const items = ['Project One', 'Project Two', 'Project Three', 'Project Four']
+import { computed } from 'vue
+  
+const items = ref([
+  { image: '/src/views/projects/aven.jpg', title: 'Aven C.S. Chatbot', date: '09/25' },
+  { image: '/src/views/projects/float.jpg', title: '', date: '11/25' },
+  { image: '/src/views/projects/mad2.jpg', title: 'Project Three', date: '11/25' },
+  { image: '/src/views/projects/scpm.jpg', title: 'Project Four', date: '01/26' },
+])
+  
+//const items = ['Project One', 'Project Two', 'Project Three', 'Project Four']
 
 const xOffsets = computed(() =>
-  items.map((_, i) => {
+  items.value.map((_, i) => {
     const base = 370 // distance from center
     const jitter = Math.random() * 100 - 50 // subtle randomness
     return (i % 2 === 0 ? -base : base) + jitter
