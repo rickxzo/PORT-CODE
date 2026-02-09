@@ -16,7 +16,7 @@
         class="work-card"
         :style="{ transform: `translateX(${xOffsets[i]}px)` }"
       >
-        <div class="h-[80%] w-[90%] bg-black rounded-3xl">
+        <div class="h-[90%] w-[100%] bg-black rounded-3xl">
           <img :src="item.image" class="w-full h-full object-cover rounded-3xl" />
         </div>
         <p class="mt-3 ml-3">[ {{ i + 1 }} ] {{ item.title }} ({{ item.date }})</p>
