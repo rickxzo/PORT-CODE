@@ -33,7 +33,7 @@ const items = ref([
   { image: '/src/views/certs/p2.jpg', title: 'Agents Course', date: 'HuggingFace' },
   { image: '/src/views/certs/p3.jpg', title: 'Fundamentals of LLMs', date: 'HuggingFace' },
   { image: '/src/views/certs/p4.jpg', title: 'Software Engineer', date: 'Hackerrank' },
-  { image: '/src/views/certs/p5.jpg', title: 'Foundation in DS & Programmming (IITM)', date: 'IITM' },
+  { image: '/src/views/certs/p5.jpg', title: 'Foundation in DS & Programmming', date: 'IITM' },
 ])
 
 const xOffsets = computed(() =>
