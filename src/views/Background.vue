@@ -70,21 +70,21 @@ const background = [
     title: "AI Trainer - DSA & SQL",
     org: "Shipd by Datacurve",
     description:
-      "Created complex DSA & SQL problems & solutions to be used as training data for LLMs capable of advanced reasoning.",
+      "Created complex DSA & SQL problems & solutions to be used as training data for LLMs capable of advanced reasoning. (50+ data points contributed)",
   },
   {
     year: "Jul 2025 - Aug 2025",
     title: "Buildcore Engineer Fellowship",
     org: "Headstarter",
     description:
-      "Worked on creating AI Agents capable of solving industry problems faced by client startups.",
+      "Worked on creating AI Agents capable of solving industry problems faced by client startups. (2 AI Agents created.)",
   },
   {
     year: "Aug 2025 - Sep 2025",
     title: "AI Trainer - SWE",
     org: "Shipd by Datacurve",
     description:
-      "Created complex full-stack projects to be used as training data for client organization's LLM.",
+      "Created complex full-stack projects to be used as training data for client organization's LLM. (1 project contributed)",
   },
 ];
 </script>
