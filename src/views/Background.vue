@@ -1,45 +1,46 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="text-white px-12 grid grid-cols-12 gap-8">
 
-    <!-- LEFT SIDE TITLE -->
-    <div class="col-span-5 pl-4">
-      <h1
-        class="text-[clamp(3rem,7vw,6rem)] font-medium tracking-tight leading-none mt-3"
-      >
+    <!-- LEFT -->
+    <div class="col-span-4 pl-4">
+      <h1 class="text-[clamp(3rem,7vw,6rem)] font-medium tracking-tight leading-none mt-3">
         BACKGROUND
       </h1>
     </div>
 
-    <!-- RIGHT SIDE CONTENT -->
-    <div class="col-span-7 pr-10">
+    <!-- RIGHT -->
+    <div class="col-span-8 relative">
 
-      <div class="space-y-20 mt-16">
+      <!-- Vertical Spine -->
+      <div class="absolute left-0 top-0 bottom-0 w-px bg-white/10"></div>
 
-        <div
-          v-for="item in background"
-          :key="item.title"
-          class="border-t border-white/10 pt-10 group"
-        >
+      <div class="space-y-24 pl-12 mt-10">
+
+        <div v-for="item in background" :key="item.title" class="relative">
+
+          <!-- Dot -->
+          <div class="absolute -left-[7px] top-2 w-3 h-3 bg-white rounded-full"></div>
+
           <!-- Year -->
-          <div class="text-sm text-white/40 tracking-widest mb-4">
+          <div class="text-xs tracking-widest text-white/40 mb-3">
             {{ item.year }}
           </div>
 
           <!-- Title -->
-          <h3 class="text-2xl font-medium mb-1 group-hover:text-white transition">
+          <h3 class="text-2xl font-medium mb-1">
             {{ item.title }}
           </h3>
 
           <!-- Org -->
-          <div class="text-white/60 mb-4">
+          <div class="text-white/60 mb-3">
             {{ item.org }}
           </div>
 
-          <!-- Description -->
+          <!-- Desc -->
           <p class="text-white/80 max-w-xl leading-relaxed">
             {{ item.description }}
           </p>
+
         </div>
 
       </div>
@@ -63,13 +64,6 @@ const background = [
     org: "Government of India",
     description:
       "Built ARGO, a marine investigative chatbot for water data analysis and research assistance.",
-  },
-  {
-    year: "2022 — 2026",
-    title: "B.Tech in Information Technology",
-    org: "Your University Name",
-    description:
-      "Focused on backend engineering, applied AI, and distributed systems.",
   },
 ];
 </script>
