@@ -19,7 +19,7 @@
         <div class="h-[90%] w-[100%] bg-black rounded-3xl">
           <img :src="item.image" class="w-full h-full object-cover rounded-3xl" />
         </div>
-        <p class="mt-3 ml-3">[ 0 ] {{ item.title }} ({{ item.date }})</p>
+        <p class="mt-3 ml-3">[ {{i}} ] {{ item.title }} ({{ item.date }})</p>
       </div>
     </div>
   </section>
@@ -29,11 +29,11 @@
 import { computed } from 'vue'
 
 const items = ref([
-  { image: '/src/views/projects/p1.jpg', title: 'Project One', date: '01/23' },
-  { image: '/src/views/projects/p2.jpg', title: 'Project Two', date: '02/23' },
-  { image: '/src/views/projects/p3.jpg', title: 'Project Three', date: '03/23' },
-  { image: '/src/views/projects/p4.jpg', title: 'Project Four', date: '04/23' },
-  { image: '/src/views/projects/p5.jpg', title: 'Project Five', date: '05/23' },
+  { image: '/src/views/certs/p1.jpg', title: 'Diploma in Programming', date: 'IITM' },
+  { image: '/src/views/certs/p2.jpg', title: 'Agents Course', date: 'HuggingFace' },
+  { image: '/src/views/certs/p3.jpg', title: 'Fundamentals of LLMs', date: 'HuggingFace' },
+  { image: '/src/views/certs/p4.jpg', title: 'Software Engineer', date: 'Hackerrank' },
+  { image: '/src/views/certs/p5.jpg', title: 'Foundation in DS & Programmming (IITM)', date: 'IITM' },
 ])
 
 const xOffsets = computed(() =>
