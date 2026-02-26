@@ -5,9 +5,9 @@
     <!-- TITLE -->
     <div>
       <h1
-        class="text-[clamp(4rem,8vw,7rem)] font-medium tracking-tight leading-none"
+        class="text-[clamp(4rem,4vw,4rem)] font-medium tracking-tight leading-none"
       >
-        BACKGROUND
+        A timeline, perhaps
       </h1>
 
       <div class="h-px bg-white/10 mt-6 w-full"></div>
@@ -52,32 +52,39 @@
 <script setup>
 const background = [
   {
-    year: "2025 — Present",
-    title: "AI Engineer",
-    org: "EqoinneAI",
+    year: "2023 — Present",
+    title: "B.Tech (IT)",
+    org: "Techno Main Saltlake",
     description:
-      "Leading backend systems and AI model deployment. Building scalable infrastructure and mentoring interns.",
+      "Learning the necessary skills for being an IT professional.",
   },
   {
-    year: "2024",
-    title: "Smart India Hackathon Finalist",
-    org: "Government of India",
+    year: "2023 - Present",
+    title: "B.S. (Data Science & Applications)",
+    org: "I.I.T. Madras",
     description:
-      "Built ARGO, a marine investigative chatbot for water data analysis and research assistance.",
+      "A second online degree to diversify skill set and undertake practical learning.",
   },
   {
-    year: "2022 — 2026",
-    title: "B.Tech in Information Technology",
-    org: "XYZ University",
+    year: "Aug 2024 - Dec 2024",
+    title: "AI Trainer - DSA & SQL",
+    org: "Shipd by Datacurve",
     description:
-      "Focused on backend engineering, applied AI, distributed systems, and machine learning research.",
+      "Created complex DSA & SQL problems & solutions to be used as training data for LLMs capable of advanced reasoning.",
   },
   {
-    year: "2023",
-    title: "AI Fellowship",
-    org: "Some Fellowship Org",
+    year: "Jul 2025 - Aug 2025",
+    title: "Buildcore Engineer Fellowship",
+    org: "Headstarter",
     description:
-      "Selected for advanced applied AI research and system-level model experimentation.",
+      "Worked on creating AI Agents capable of solving industry problems faced by client startups.",
+  },
+  {
+    year: "Aug 2025 - Sep 2025",
+    title: "AI Trainer - SWE",
+    org: "Shipd by Datacurve",
+    description:
+      "Created complex full-stack projects to be used as training data for client organization's LLM.",
   },
 ];
 </script>
